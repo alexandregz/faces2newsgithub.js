@@ -8,5 +8,7 @@ ToDo?
 =====
 
 check to make only one ajax petition for user
+
 be careful with css and html
+
 more useful (not only for news feed, for example)
