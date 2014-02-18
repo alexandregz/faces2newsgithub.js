@@ -14,13 +14,13 @@
 
 
 
-$('.news .alert .body .simple .title a:not(".css-truncate")').each(function(){
+$('.news .alert .body .simple .title a:first-child').each(function(){
 	var l = $(this).parent();
-	
+
 	$.ajax({
 		url: $(this).html(),
 		success: function(data) { 
-			l.prepend( '<img src="' +$(data).filter('meta[property="og\:image"]').attr('content')+ '" width=20 height=20 /> ' ); 
+			l.prepend( '<img class="gravatar js-gravatar" src="' +$(data).filter('meta[property="og\:image"]').attr('content')+ '" width=20 height=20 /> ' ); 
 		}
 	})
 });
